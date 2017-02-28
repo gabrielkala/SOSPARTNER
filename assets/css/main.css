@@ -1,0 +1,197 @@
+body{
+	padding-top: 70px;
+}
+
+
+/* +++++++++++
+  PARSLEY CSS
+   +++++++++++ */
+   input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+/**#searchbox{
+  margin-top: 10px;
+  width: 250px;
+}
+
+#display-results{
+width: 250px;
+border-left: 1px solid #dedede;
+border-right: 1px solid #dedede;
+border-bottom: 1px solid #dedede;
+position: fixed;
+display: none;
+}
+
+.display-box-user{
+  padding: 4px;
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+  height: 60px;
+  font-size: 13px;
+}
+
+.display-box-user a{
+  color: #333;
+  text-decoration: none;
+}
+
+.display-box-user:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.display-box-user:hover{
+  background-color: #3b5998;
+  color:#fff;
+  cursor: pointer;
+
+} **/
+
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: darkred;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+/* +++++++++++
+  FIN DE PARSLEY CSS
+   +++++++++++ */
+
+/* +++++++++++
+  LISTE DES MEMBRES
+   +++++++++++ */
+.users{
+  margin-bottom: 3 em;
+}
+
+.user-block{
+  text-align: center;
+}
+
+.user-block .avatar{
+  margin : auto;
+}
+
+/* +++++++++++
+  FIN LISTE DES MEMBRES
+   +++++++++++ */
+
+
+
+   /* +++++++++++
+  Les Statuts
+   +++++++++++ */
+   .status-post{
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+   }
+
+   .status-post textarea{
+    border: none;
+   }
+
+   .status-post textarea:focus{
+    box-shadow: none;
+   }
+
+   .status-post-submit{
+    border:1px solid #e9e9e9;
+    padding:0.5em 1em;
+    overflow: hidden;
+    margin-bottom: 0;
+
+   }
+
+   .status-post-submit .btn{
+    float : right;
+   }
+
+   .media-body{
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 2em;
+    -ms-word-break: break-all;
+   }
+
+    /* +++++++++++
+  FIN des Statuts
+   +++++++++++ */
+
+
+    /* +++++++++++
+      COOKIES
+   +++++++++++ */
+
+    .cookie{
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px 20px;
+    
+    color: #666;
+    font-size: 0.9em;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+.cookie a{ text-decoration: underline;}
+.cokkie a:hover{ text-decoration: none;}
+
+.cookie_btn{
+  display: inline;
+  margin-left: 15px;
+  padding: 4px 10px;
+
+  color:#FFF;
+
+  background-color: #55acee;
+  border-radius: 3px;
+}
+
+
+    /* +++++++++++
+      FIN COOKIES
+   +++++++++++ */
+
+
+
+
+
+
+
+
+
+  
+
+   
