@@ -1,7 +1,7 @@
 <?php
 
 define('WEBSITE_NAME', 'SOS Partners &#9917;');
-define('WEBSITE_URL', 'http://localhost/SOSPARTNERS');
+define("WEBSITE_URL", 'http://localhost/sospartner/');
 //define('WEBSITE_URL', 'http://www.mdll.fr/SOSPARTNERS');
 
 define('ACCEPT_REJECT_RELATION_LINK', 'accept_reject_relation_link');

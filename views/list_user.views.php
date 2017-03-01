@@ -1,7 +1,7 @@
 
      <?php $title = "Liste des membres"; ?>
      <?php include('partials/_header.php'); ?>
-    <?php require("includes/functions.php"); ?> 
+    <?php require("includes/functions.php"); ?>
 
 
 
@@ -12,7 +12,7 @@
 
       <h4>Rechercher un partenaire</h4>
 
-       <form class="form-inline" action="recherche.php" method="post"
+       <form class="form-inline" action="<?= WEBSITE_URL?>list_users.php" method="post"
   style="margin-bottom: 50px">
 
   <div>
@@ -31,7 +31,7 @@
     </select> <label class="control-label">niveau: </label> <select
       class="form-control" name="niveau" id="niveau">
       <option  selected>tous</option>
-      <option >débutant</option>
+      <option >debutant</option>
       <option >amateur</option>
       <option >competiteur</option>
       <option >professionnel</option>
@@ -39,16 +39,16 @@
     <button type="submit" class="btn btn-primary btn-xs" name="ok">OK</button>
   </div>
 </form>
-    
+
     <h3>Liste des membres</h3>
-    <?php foreach (array_chunk($users, 4) as $user_set): ?>
+    <?php foreach (array_chunk((array)$users, 4) as $user_set): ?>
     <div class="row users">
     <?php foreach ($user_set as $user): ?>
       <div class="col-md-3 user-block">
-        <a href="profile.php?id=<?= $user->id ?>"><img src="<?= get_avatar_url($user->email, 70) ?>" 
+        <a href="profile.php?id=<?= $user->id ?>"><img src="<?= get_avatar_url($user->email, 70) ?>"
           alt="<?= e($user->pseudo) ?>" class="avatar img-circle">
       </a>
-        
+
         <h4 class="user-block-username">
           <a href="profile.php?id=<?= $user->id ?>">
           <?= e($user->pseudo) ?>
