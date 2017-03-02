@@ -15,7 +15,7 @@ if(!empty($_GET['id'])){
 	if(!$user) {
 		redirect('index.php');
 	} else {
-    $q = $db->prepare('SELECT content, created_at FROM microposts WHERE user_id = :user_id ORDER BY created_at DESC');
+    $q = $db->prepare('SELECT id, content, created_at FROM microposts WHERE user_id = :user_id ORDER BY created_at DESC');
    
     $q->execute([
       'user_id' => $_GET['id']

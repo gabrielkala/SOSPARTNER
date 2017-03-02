@@ -1,7 +1,8 @@
 
      <?php $title = "Liste des membres"; ?>
      <?php include('partials/_header.php'); ?>
-    <?php require("includes/functions.php"); ?> 
+    <?php require("includes/functions.php"); ?>
+
 
 
 
@@ -12,7 +13,7 @@
 
       <h4>Rechercher un partenaire</h4>
 
-       <form class="form-inline" action="recherche.php" method="post"
+       <form class="form-inline" action="list_users.php" method="post"
   style="margin-bottom: 50px">
 
   <div>
@@ -31,7 +32,7 @@
     </select> <label class="control-label">niveau: </label> <select
       class="form-control" name="niveau" id="niveau">
       <option  selected>tous</option>
-      <option >débutant</option>
+      <option >debutant</option>
       <option >amateur</option>
       <option >competiteur</option>
       <option >professionnel</option>
@@ -53,6 +54,7 @@
           <a href="profile.php?id=<?= $user->id ?>">
           <?= e($user->pseudo) ?>
           </a>
+
 
         </h4>
       </div>

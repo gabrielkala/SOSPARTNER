@@ -26,7 +26,12 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <strong><?= e($user->pseudo)?></strong><br>
-                        <a href="mailto:<?= e($user->email) ?>"><?= e($user->email) ?></a><br>
+                          <div>
+                              <a href="add_friend.php?id=40" class="btn btn-primary pull-left"><i class="fa fa-envelope"></i> Envoyer un message<a/>
+                          </div>
+
+
+                              <a href="mailto:<?= e($user->email) ?>"><?= e($user->email) ?></a><br>
                         <?= 
                          $user->ville && $user->adresse
                           ? '<i class="fa fa-location-arrow"></i>&nbsp'.e($user->ville).' - '.e($user->adresse).'<br/>':'';
@@ -116,6 +121,9 @@
 <script src="assets/js/jquery.livequery.min.js"></script>
 <script src="libraries/parsley/parsley.min.js"></script>
 <script src="libraries/parsley/i18n/fr.js"></script>
+          <script src="assets/js/jquery.min.js"></script>
+          <script src="libraries/sweetalert/sweetalert.min.js"></script>
+          <script src="assets/js/main.js"></script>
 <script type="text/javascript">
 window.ParsleyValidator.setlocale('fr');
   $(document).ready(function() {

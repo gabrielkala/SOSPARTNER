@@ -6,9 +6,22 @@ require("includes/functions.php");
 require("includes/constants.php");
 require("includes/init.php");
 
-$q = $db->query("SELECT id, pseudo, email FROM users WHERE active='1' ORDER BY pseudo");
-$users = $q->fetchAll(PDO::FETCH_OBJ);
+if(isset($_POST['ok'])) {
+    $sport = $_POST['sport'];
+    $niveau = $_POST['niveau'];
 
+    $req = $db->prepare('SELECT * FROM users WHERE sport = :sport AND niveau = :niveau');
+
+    $req->execute(array(
+        'sport' => $sport,
+        'niveau' => $niveau
+    ));
+    $users = $req->fetchAll(PDO::FETCH_OBJ);
+
+} else {
+    $q = $db->query("SELECT id, pseudo, email FROM users WHERE active='1' ORDER BY pseudo");
+    $users = $q->fetchAll(PDO::FETCH_OBJ);
+}
 
 
 
