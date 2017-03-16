@@ -8,4 +8,4 @@ if(isset($_SESSION['notification']['message'])):
    </div>
 </div>
 <?php $_SESSION['notification'] = []; ?>
-<?php endif; 
+<?php endif; ?>
