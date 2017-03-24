@@ -75,7 +75,7 @@ Vous ne permettrez pas et n’encouragerez pas les infractions à cette Déclara
 
             <h4> 6 Résiliation </h4>
 
-            <p>Si vous enfreignez la lettre ou l’esprit de cette Déclaration, ou créez autrement un risque de poursuites à notre encontre, nous pouvons arrêter de vous fournir tout ou partie de Facebook. Nous vous en avertirons par courrier électronique ou lors de votre prochaine connexion à votre compte. Vous pouvez également supprimer votre compte ou désactiver votre application à tout moment. </P> <br />
+            <p>Si vous enfreignez la lettre ou l’esprit de cette Déclaration, ou créez autrement un risque de poursuites à notre encontre, nous pouvons arrêter de vous fournir tout ou partie de SOS Partners. Nous vous en avertirons par courrier électronique ou lors de votre prochaine connexion à votre compte. Vous pouvez également supprimer votre compte ou désactiver votre application à tout moment. </P> <br />
           </div>
         </div>
     </div>

@@ -27,7 +27,7 @@
                     <tr>
                         <td align="center" style="text-align: center;">
                             <a href="http://mdll.fr">
-                                <img src="logo.png" width="43" border="0" alt="Logo local.dev">
+                               <!-- <img src="logo.png" width="43" border="0" alt="Logo local.dev"> -->
                             </a>
                         </td>
                     </tr>
@@ -57,13 +57,13 @@
                             <table align="center" width="240" cellspacing="0" cellpadding="0">
                                 <tbody>
                                 <tr>
-                                    <td width="30"><img src="../l.png" height="60" alt="" align="absbottom" style="display:block;"></td>
+                                   <!-- <td width="30"><img src="l.png" height="60" alt="" align="absbottom" style="display:block;"></td> -->
                                     <td height="60" align="center" bgcolor="#78ab4e" style="" valign="middle" style="line-height: 60px;">
                                         <a href="<?= WEBSITE_URL.'/activation.php?p='.$pseudo.'&amp;token='.$token ?>" target="_blank" style="font-size: 18px;font-family: 'Questrial', Helvetica, sans-serif; color:#FFF; text-align: center; text-decoration: none; line-height: 60px; display: block; height:60px;">
                                             Valider mon compte
                                         </a>
                                     </td>
-                                    <td width="30"><img src="../r.png" height="60" alt="" align="absbottom" style="display:block;"></td>
+                                   <!-- <td width="30"><img src="r.png" height="60" alt="" align="absbottom" style="display:block;"></td> -->
                                 </tr>
                                 </tbody>
 
@@ -102,7 +102,7 @@
             <table align="center" width="590" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                     <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:40px; color: #FFF; mso-line-height-rule: exactly; line-height: 28px;">
-                        Notre titre
+                        Maison des Ligues de Lorraine
                     </td>
                 </tr>
                 <tr>
@@ -130,7 +130,7 @@
                             <tbody>
                             <tr>
                                 <td align="center">
-                                    <img src="user.png" alt="User" width="40">
+                                   <!-- <img src="user.png" alt="User" width="40"> -->
                                 </td>
                             </tr>
 
@@ -139,7 +139,7 @@
                             </tr>
 
                             <tr>
-                                <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:18px; color: #FFF; mso-line-height-rule: exactly; line-height: 22px;">Philip J Fry</td>
+                                <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:18px; color: #FFF; mso-line-height-rule: exactly; line-height: 22px;">M2L</td>
                             </tr>
 
                             <tr>
@@ -163,7 +163,7 @@
                             <tbody>
                             <tr>
                                 <td align="center">
-                                    <img src="user.png" alt="User" width="40">
+                                    <!-- <img src="user.png" alt="User" width="40"> -->
                                 </td>
                             </tr>
 
@@ -172,7 +172,7 @@
                             </tr>
 
                             <tr>
-                                <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:18px; color: #FFF; mso-line-height-rule: exactly; line-height: 22px;">Philip J Fry</td>
+                                <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:18px; color: #FFF; mso-line-height-rule: exactly; line-height: 22px;">Region Lorraine</td>
                             </tr>
 
                             <tr>
@@ -197,7 +197,7 @@
                             <tbody>
                             <tr>
                                 <td align="center">
-                                    <img src="user.png" alt="User" width="40">
+                                    <!-- <img src="user.png" alt="User" width="40"> -->
                                 </td>
                             </tr>
 
@@ -206,7 +206,7 @@
                             </tr>
 
                             <tr>
-                                <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:18px; color: #FFF; mso-line-height-rule: exactly; line-height: 22px;">Philip J Fry</td>
+                                <td align="center" style="font-family: 'Questrial', Helvetica, sans-serif; text-align: center; font-size:18px; color: #FFF; mso-line-height-rule: exactly; line-height: 22px;">Ministere des sports</td>
                             </tr>
 
                             <tr>

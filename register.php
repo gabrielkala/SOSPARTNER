@@ -59,7 +59,7 @@ session_start();
         	mail($to, $subject, $content, $headers);
         	//Informer l'utilisateur pour qu'il verifie sa boite de reception
         	set_flash("Mail d'activation envoye!", 'success');
-        	//enregistre l'utilisateur dans la dase de donne
+        	//enregistre l'utilisateur dans la base de donne
         	$q = $db->prepare('INSERT INTO users(name, pseudo, email, password)
         		               VALUES(:name, :pseudo, :email, :password)');
         	$q->execute([

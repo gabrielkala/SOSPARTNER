@@ -51,12 +51,16 @@
         </div>
         <?php endif ?>
     <?php foreach (array_chunk((array)$users, 4) as $user_set): ?>
+
         <div class="row users">
+
             <?php foreach ($user_set as $user): ?>
               <div class="col-md-3 user-block">
+
                 <a href="profile.php?id=<?= $user->id ?>"><img src="<?= get_avatar_url($user->email, 70) ?>"
                   alt="<?= e($user->pseudo) ?>" class="avatar img-circle">
               </a>
+
 
                 <h4 class="user-block-username">
                   <a href="profile.php?id=<?= $user->id ?>">
@@ -65,8 +69,10 @@
 
                 </h4>
               </div>
+
             <?php endforeach ?>
         </div>
+
       <?php endforeach ?>
   </div>
 </div>
