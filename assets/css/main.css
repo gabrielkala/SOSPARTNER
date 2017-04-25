@@ -184,11 +184,34 @@ display: none;
       FIN COOKIES
    +++++++++++ */
 
+li.have_notifs > a{
+    color: #ff0000 !important;
+    font-weight: bold;
+}
+.not_seen{
+     background-color: #f2f2f2;
+     }
 
+#wrapper-message{
+    margin-top: 25px;
+}
+#wrapper-message > p{
 
+    border-radius: 25px;
+    padding:5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-
-
+}
+#wrapper-message > p.emis{
+    background-color: rgba(0,0,0,0.1);
+}
+#wrapper-message > p.recu{
+    background-color: rgba(51,153,255,0.6);
+}
+.haut{
+    margin-top: 25px;
+    padding:5px;
+}
 
 
 

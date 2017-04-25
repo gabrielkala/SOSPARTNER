@@ -12,9 +12,11 @@
     	<div class="col-md-6">
     		 <div class="panel panel-default">
                    <div class="panel-heading">
-                      <h3 class="panel-title">Profil de <?= e($user->pseudo) ?> ( 
-                        <?= friends_counts($_GET['id'])?> ami <?= friends_counts($_GET['id']) == 1 ? '' : 's'?>)</h3>
+                      <h3 class="panel-title">Profil de <?= e($user->pseudo) ?> (
+                          <?= friends_counts($_GET['id'])?> ami <?= friends_counts($_GET['id']) == 1 ? '' : 's'?>)
+                      </h3>
                    </div>
+
                 <div class="panel-body">
                    <div class="row">
                      <div class="col-md-5">
@@ -133,7 +135,7 @@ $user->telephone ? '<strong>☎ '.e($user->telephone).'</strong><br>':'';
 <script type="text/javascript">
     window.ParsleyValidator.setlocale('fr');
     $(document).ready(function() {
-        $("span.timeago").timeago();
+        $(".timeago").timeago();
 
         $(".timeago").livequery(function(){
             $(this).timeago();

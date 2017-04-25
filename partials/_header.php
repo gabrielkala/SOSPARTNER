@@ -21,6 +21,7 @@
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
       <link rel="stylesheet" href="libraries/sweetalert/sweetalert.css">
+      <link rel="stylesheet" href="libraries/uploadify/uploadify.css">
 
     
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

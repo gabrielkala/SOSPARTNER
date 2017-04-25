@@ -1,10 +1,8 @@
 <?php
+require('config/database.php');
 require('includes/functions.php');
 include('includes/constants.php');
 include('partials/_header.php');
-
-
-
 
 
 $q = $db->prepare("SELECT pseudo FROM users WHERE id = :id");
@@ -12,10 +10,6 @@ $q->execute(array(
 'id' => $_GET['id']
 ));
 $users = $q->fetch(PDO::FETCH_ASSOC);
-
-
-
-
 ?>
 
 
@@ -34,12 +28,6 @@ $users = $q->fetch(PDO::FETCH_ASSOC);
                             <label for="a" class="col-sm-2 control-label">à :</label>
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" id="a" name="a" value="<?= ucfirst($users['pseudo'])?>" disabled="disabled">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sujet" class="col-sm-2 control-label">Sujet</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="sujet" name="sujet" value="">
                             </div>
                         </div>
                         <div class="form-group">

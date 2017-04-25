@@ -23,6 +23,15 @@ if(!empty($_GET['id']) && $_GET['id'] !== get_session('user_id')){
 		'user_id2' => $id
 		]);
 
+	//Sauvegarde de la notification
+        $q = $db->prepare('INSERT INTO notifications(subject_id, name, user_id)
+                          VALUES(:subject_id, :name, :user_id)');
+        $q->execute([
+            'subject_id' => $id,
+            'name' => 'friend_request_sent',
+            'user_id' => get_session('user_id'),
+        ]);
+
 	set_flash('demande envoyée!');
 	redirect('profile.php?id='.$id);
 }else {

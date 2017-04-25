@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php"><?php echo WEBSITE_NAME;?></a>
+          <a class="navbar-brand" href="index.php"><?php echo 'SOS Partners &#9917';?></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -19,9 +19,9 @@
 
             <?php if( is_logged_in()): ?>
                 <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-               <img src="<?= get_avatar_url(get_session('email')) ?>" alt="Image de Profil de <?= get_session('pseudo') ?>" class="img-circle">
-               <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="<?= get_avatar_url(get_session('email')) ?>" alt="Image de Profil de <?= get_session('pseudo') ?>" class="img-circle">
+                        <span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
                             <li class="<?= set_active('profile') ?>">
                               <a href="profile.php?id=<?= get_session('user_id') ?>">Mon profil</a>
@@ -34,6 +34,16 @@
                               <a href="logout.php?id=<?= get_session('user_id') ?>">Deconnexion</a>
                             </li>
                           </ul>
+                        </li>
+                        <li class="<?= $notifications_count > 0 ? 'have_notifs' : '' ?>">
+                            <a href="notifications.php"><i class="fa fa-bell" aria-hidden="true"></i>
+                                <?= $notifications_count > 0 ? "($notifications_count)" : ''; ?>
+                            </a>
+                        </li>
+                        <li class="have_notifs">
+                            <a href="conversation.php"><i class="fa fa-comments" aria-hidden="true"></i>
+
+                           </a>
                         </li>
             <?php else: ?>
             <li class="<?= set_active('login') ?>"><a href="login.php">Connexion</a></li>

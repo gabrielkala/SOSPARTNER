@@ -50,6 +50,7 @@
             </div>
         </div>
         <?php endif ?>
+
     <?php foreach (array_chunk((array)$users, 4) as $user_set): ?>
 
         <div class="row users">
@@ -62,10 +63,14 @@
               </a>
 
 
+
                 <h4 class="user-block-username">
+
                   <a href="profile.php?id=<?= $user->id ?>">
                   <?= e($user->pseudo) ?>
                   </a>
+
+
 
                 </h4>
               </div>
@@ -76,6 +81,7 @@
       <?php endforeach ?>
   </div>
 </div>
+
 
 
    <?php include('partials/_footer.php');?>

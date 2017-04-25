@@ -19,7 +19,7 @@ $(document).ready(function(){
             showCancelButton: true,
              cancelButtonText: "Annuler",
              confirmButtonText: "Oui",
-             confirmButtonColor: "#DD6B55"
+             confirmButtonColor: "#dd6b55"
          }, function(isConfirm){
              if(isConfirm) {
                 //Si l'utilisateur clique sur Oui,

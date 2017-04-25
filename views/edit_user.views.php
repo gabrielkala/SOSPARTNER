@@ -30,6 +30,15 @@
   		          	        <input type="text" name="ville" id="ville" class="form-control" value="<?= get_input('ville') ? get_input('ville') : e($user-> ville) ?>" required="required"/>
   		          	    </div>
   		          	</div>
+                          <!-- input upload -->
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="avatar">Modifier mon profil</label>
+                                    <input type="file" name="avatar" id="avatar"/>
+                                </div>
+                            </div>
+                          </div>
                      <!-- input Adresse -->
   		          	<div class="col-md-6">
   		          	 	<div class="form-group">
@@ -63,7 +72,7 @@
                        <!-- input Telephone -->
   		          	    <div class="col-md-6">
   		          		    <div class="form-group">
-  		          			    <label for="telephone">Téléphone</lable>
+  		          			    <label for="telephone">Téléphone</label>
   		          			    <input type="text" name="telephone" id="telephone" value="<?= get_input('telephone') ? get_input('telephone') : e($user-> telephone) ?>" class="form-control"/>
   		          		    </div>
   		          	    </div>
@@ -170,5 +179,28 @@
 </div>
 </div>
 
+      <!-- scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="libraries/uploadify/jquery.uploadify.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-   <?php include('partials/_footer.php');?>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+      <script src="libraries/parsley/parsley.min.js"></script>
+
+      <script src="libraries/parsley/i18n/fr.js"></script>
+      <script type="text/javascript">
+          window.ParsleyValidator.setLocale('fr');
+
+          $(function() {
+              $('#avatar').uploadify({
+                  'buttonText' : 'Parcourir',
+                  'swf'      : 'libraries/uploadify/uploadify.swf',
+                  'uploader' : 'libraries/uploadify/uploadify.php'
+                  // Put your options here
+              });
+          });
+      </script>
+
+      </body>
+      </html>
